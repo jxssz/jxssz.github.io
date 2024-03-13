@@ -55,7 +55,7 @@ jobs:
 
       # 生成静态文件
       - name: Build
-        run: pnpm install && pnpm run build
+        run: pnpm install && pnpm run generate
 
       # 部署到 GitHub Pages
       - name: Deploy
@@ -63,4 +63,4 @@ jobs:
         with:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BRANCH: gh-pages
-          FOLDER: .output
+          FOLDER: dist
