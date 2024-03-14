@@ -28,6 +28,7 @@ export default defineNuxtConfig({
   },
 
   nitro: {
+    preset: 'cloudflare',
     esbuild: {
       options: {
         target: 'esnext',
@@ -38,11 +39,11 @@ export default defineNuxtConfig({
       routes: ['/'],
       ignore: ['/hi'],
     },
-    output: {
-      dir: 'output',
-      serverDir: 'output/server',
-      publicDir: 'output/public',
-    },
+    // output: {
+    //   dir: 'output',
+    //   serverDir: 'output/server',
+    //   publicDir: 'output/public',
+    // },
   },
 
   app: {

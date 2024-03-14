@@ -1,0 +1,8 @@
+  name = "demo"
+  main = "./.output/server/index.mjs"
+  workers_dev = true
+  compatibility_date = "2022-09-10"
+  account_id = "e4fe8b9de3515234e7ef727ce4475554"
+  route = "demo"
+  [site]
+  bucket = ".output/public"

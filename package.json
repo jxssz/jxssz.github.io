@@ -6,12 +6,15 @@
     "build": "nuxi build",
     "dev:pwa": "VITE_PLUGIN_PWA=true nuxi dev",
     "dev": "nuxi dev",
-    "generate": "nuxi generate",
+    "generate": "nuxi generate ",
     "postinstall": "nuxi prepare",
     "start": "node output/server/index.mjs",
     "start:generate": "npx serve .output/public",
     "lint": "eslint .",
     "typecheck": "vue-tsc --noEmit"
+  },
+  "dependencies": {
+    "wrangler": "^3.33.0"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.6.3",
