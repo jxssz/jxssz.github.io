@@ -38,6 +38,11 @@ export default defineNuxtConfig({
       routes: ['/'],
       ignore: ['/hi'],
     },
+    output: {
+      dir: 'output',
+      serverDir: 'output/server',
+      publicDir: 'output/public',
+    },
   },
 
   app: {
